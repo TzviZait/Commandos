@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commandos
 {
-    internal class Commando
+    public class Commando
     {
         private string name;
         public string codeName;

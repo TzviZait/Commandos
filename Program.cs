@@ -22,6 +22,12 @@ namespace Commandos
             Console.WriteLine(commando.codeName);
             commando.CodeName = "t";
             Console.WriteLine(commando.CodeName);
+
+            AirCommando airCommando = new AirCommando("tzvi", "z", new string[] { "knife", "grenade", "rifle" }, "Waiting");
+            airCommando.Parachute();
+
+            SeaCommando seaCommando = new SeaCommando("tzvi", "z", new string[] { "knife", "grenade", "rifle" }, "Waiting");
+            seaCommando.Swim();
         }
     }
 }
