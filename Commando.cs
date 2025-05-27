@@ -9,17 +9,18 @@ namespace Commandos
     internal class Commando
     {
         private string name;
-        public string codName;
+        public string codeName;
         string[] tolls;
         public string status;
-        public Commando(string name, string codName, string[] tolls, string status)
+        public Commando(string name, string codeName, string[] tolls, string status)
         {
             this.name = name;
-            this.codName = codName;
+            this.codeName = codeName;
             this.tolls = tolls;
             this.status = status;
         }
 
+        public string CodeName { get; set; }
 
         public void Walk()
         {
@@ -36,7 +37,7 @@ namespace Commandos
 
         public void Attack()
         {
-            Console.WriteLine(codName + " is attack");
+            Console.WriteLine(codeName + " is attack");
         }
 
         public string SayName(string commanderRank)
@@ -48,14 +49,15 @@ namespace Commandos
 
             else if (commanderRank == "colonel")
             {
-                return "the attack cod name is: " + codName;
+                return "the attack cod name is: " + codeName;
             }
 
-            else 
+            else
             {
                 return "Classified information";
             }
         }
+
 
     }
 }
