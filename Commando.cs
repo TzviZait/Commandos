@@ -43,12 +43,12 @@ namespace Commandos
         {
             if (commanderRank == "general")
             {
-                return name;
+                return "the attack name is: " + name;
             }
 
             else if (commanderRank == "colonel")
             {
-                return codName;
+                return "the attack cod name is: " + codName;
             }
 
             else 
