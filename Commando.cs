@@ -25,17 +25,17 @@ namespace Commandos
         public void Walk()
         {
             status = "Walking";
-            Console.WriteLine(status);
+            Console.WriteLine("the commando is " + status);
         }
 
         public void Hide()
         {
             status = "Hiding";
-            Console.WriteLine(status);
+            Console.WriteLine("the commando is " + status);
         }
 
 
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine(codeName + " is attack");
         }

@@ -28,6 +28,13 @@ namespace Commandos
 
             SeaCommando seaCommando = new SeaCommando("tzvi", "z", new string[] { "knife", "grenade", "rifle" }, "Waiting");
             seaCommando.Swim();
+
+            Commando[] commandos = { commando, airCommando, seaCommando };
+            foreach (var c in commandos)
+            {
+                Console.WriteLine(c.GetType());
+                c.Attack();
+            }
         }
     }
 }

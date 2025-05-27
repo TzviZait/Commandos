@@ -15,5 +15,10 @@ namespace Commandos
         {
             Console.WriteLine("Sea commando swims into action!");
         }
+
+        public override void Attack() 
+        {
+            Console.WriteLine(codeName + " is attacking from the sea!");
+        }
     }
 }

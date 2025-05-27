@@ -16,6 +16,11 @@ namespace Commandos
         {
             Console.WriteLine("Airborne commando drops into action!");
         }
+
+        public override void Attack()
+        {
+            Console.WriteLine(codeName + " is attacking from the air!");
+        } 
     }
 }
 
