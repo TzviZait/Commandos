@@ -8,7 +8,7 @@ namespace Commandos
 {
     internal class Commando
     {
-        public string name;
+        private string name;
         public string codName;
         string[] tolls;
         public string status;
@@ -37,6 +37,24 @@ namespace Commandos
         public void Attack()
         {
             Console.WriteLine(codName + " is attack");
+        }
+
+        public string SayName(string commanderRank)
+        {
+            if (commanderRank == "general")
+            {
+                return name;
+            }
+
+            else if (commanderRank == "colonel")
+            {
+                return codName;
+            }
+
+            else 
+            {
+                return "Classified information";
+            }
         }
 
     }
