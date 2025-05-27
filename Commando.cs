@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Commando
+namespace Commandos
 {
     internal class Commando
     {
-        string name;
-        string codName;
+        public string name;
+        public string codName;
         string[] tolls;
-        string status;
+        public string status;
         public Commando(string name, string codName, string[] tolls, string status)
         {
             this.name = name;
@@ -36,7 +36,7 @@ namespace Commando
 
         public void Attack()
         {
-            Console.WriteLine(codName);
+            Console.WriteLine(codName + " is attack");
         }
 
     }
