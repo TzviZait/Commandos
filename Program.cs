@@ -18,7 +18,6 @@ namespace Commandos
 
             Weapon weapon = new Weapon("M16", "Raphael", 30);
             weapon.Shoot();
-            Console.WriteLine(commando.SayName("general"));
             Console.WriteLine(commando.codeName);
             commando.CodeName = "t";
             Console.WriteLine(commando.CodeName);
@@ -35,6 +34,8 @@ namespace Commandos
                 Console.WriteLine(c.GetType());
                 c.Attack();
             }
+
+            commando.SayName("general", "tzvi", "z");
         }
     }
 }

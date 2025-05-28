@@ -40,22 +40,9 @@ namespace Commandos
             Console.WriteLine(codeName + " is attack");
         }
 
-        public string SayName(string commanderRank)
+        public void SayName(string commanderRank,string name , string codeName)
         {
-            if (commanderRank == "general")
-            {
-                return "the attack name is: " + name;
-            }
-
-            else if (commanderRank == "colonel")
-            {
-                return "the attack cod name is: " + codeName;
-            }
-
-            else
-            {
-                return "Classified information";
-            }
+            Console.WriteLine(Permissions.PermissionsName(commanderRank,name,codeName));
         }
 
 
